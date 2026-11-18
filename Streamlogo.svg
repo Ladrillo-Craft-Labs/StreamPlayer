@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Deep obsidian radial background with a subtle rose undertone -->
+    <radialGradient id="baseGlow" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#1A0D18" />
+      <stop offset="60%" stop-color="#0E070D" />
+      <stop offset="100%" stop-color="#060205" />
+    </radialGradient>
+
+    <!-- Outer Ring 1: Neon Fuchsia to Vibrant Hot Pink -->
+    <linearGradient id="orbitHotPink" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF007F" />
+      <stop offset="50%" stop-color="#FF1493" />
+      <stop offset="100%" stop-color="#FF69B4" />
+    </linearGradient>
+
+    <!-- Outer Ring 2: Deep Magenta to Soft Pastel Rose -->
+    <linearGradient id="orbitRose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D946EF" />
+      <stop offset="50%" stop-color="#EC4899" />
+      <stop offset="100%" stop-color="#FDA4AF" />
+    </linearGradient>
+
+    <!-- Center Play Core: Prismatic White to Vivid Rose/Pink -->
+    <linearGradient id="corePink" x1="0%" y1="30%" x2="100%" y2="70%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="45%" stop-color="#FFB5D5" />
+      <stop offset="100%" stop-color="#FF1493" />
+    </linearGradient>
+
+    <!-- Neon Pink Ambient Glow Filter -->
+    <filter id="pinkGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Hard Drop Shadow for Core Depth -->
+    <filter id="coreShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.85" />
+    </filter>
+  </defs>
+
+  <!-- Background App Canvas Plate -->
+  <rect width="512" height="512" rx="120" ry="120" fill="url(#baseGlow)" />
+  
+  <!-- Precision Rim Line with Rose Tint -->
+  <rect width="510" height="510" x="1" y="1" rx="119" ry="119" fill="none" stroke="#FF69B4" stroke-opacity="0.18" stroke-width="1.5" />
+
+  <!-- Ambient Internal Pink Core Glow -->
+  <circle cx="256" cy="256" r="140" fill="#FF1493" opacity="0.12" filter="url(#pinkGlow)" />
+
+  <g transform="translate(256, 256)">
+    <!-- ORBIT 1: Counter-clockwise Deep Magenta / Pastel Rose slipstream -->
+    <path d="M -160,0 A 160,160 0 1,1 0,160 L -12,120 A 120,120 0 1,0 -120,0 Z" 
+          fill="url(#orbitRose)" 
+          opacity="0.9" />
+
+    <!-- ORBIT 2: Clockwise Neon Fuchsia / Hot Pink playback ring -->
+    <path d="M 160,0 A 160,160 0 1,1 0,-160 L 12,-120 A 120,120 0 1,0 120,0 Z" 
+          fill="url(#orbitHotPink)" 
+          opacity="0.95" />
+
+    <!-- CENTER FLOATING PLAY CORE: Sharp Kinetic Prism -->
+    <g filter="url(#coreShadow)">
+      <!-- Prismatic Bevel Backing with Neon Pink Outline -->
+      <path d="M -42,-64 C -42,-72 -33,-77 -26,-72 L 78,-10 C 85,-6 85,5 78,9 L -26,71 C -33,76 -42,71 -42,63 Z" 
+            fill="#120710" 
+            stroke="url(#orbitHotPink)" 
+            stroke-width="3" />
+
+      <!-- Inner Glass Play Crystal -->
+      <path d="M -34,-50 L 58,0 L -34,50 Z" 
+            fill="url(#corePink)" />
+
+      <!-- Specular Light Sheen (Top Half) -->
+      <path d="M -34,-50 L 58,0 L -34,0 Z" 
+            fill="#FFFFFF" 
+            opacity="0.4" />
+    </g>
+  </g>
+</svg>
