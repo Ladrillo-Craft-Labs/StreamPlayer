@@ -1,4 +1,4 @@
-﻿[build]
+[build]
   base = "streamplayer-web"
   command = "npm run build"
   publish = "dist"
