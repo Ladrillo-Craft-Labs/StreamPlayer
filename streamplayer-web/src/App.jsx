@@ -744,7 +744,7 @@ export default function App() {
                 <img src="/Streamlogo.svg" alt="StreamPlayer" className="w-full h-full object-contain" />
               </div>
               <div>
-                <h3 className="text-xl font-extrabold text-white">StreamPlayer v1.0.1</h3>
+                <h3 className="text-xl font-extrabold text-white">StreamPlayer v2.0.1</h3>
                 <p className="text-xs font-mono text-pink-300">com.ladrillocraftlabs.streamplayer</p>
               </div>
             </div>
