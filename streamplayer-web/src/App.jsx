@@ -756,9 +756,28 @@ export default function App() {
               <div className="flex justify-between"><span className="text-pink-200/60">Signature:</span><span className="text-emerald-400">Release Keystore Verified</span></div>
             </div>
 
+            <div className="mb-6 rounded-2xl border border-pink-500/20 bg-pink-500/5 p-4 text-sm text-pink-100/85">
+              <h4 className="mb-2 font-bold text-white">Before you download</h4>
+              <ol className="list-decimal space-y-1.5 pl-5">
+                <li>If you experience any glitches, please restart the app.</li>
+                <li>If an older version is installed, uninstall it before installing this version.</li>
+                <li>
+                  Have a suggestion?{' '}
+                  <a
+                    href="https://sidharthmn.netlify.app/app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-neonPink hover:underline"
+                  >
+                    Fill out the feedback form
+                  </a>.
+                </li>
+              </ol>
+            </div>
+
             <div className="space-y-3">
               <a
-                href="https://github.com/Ladrillo-Craft-Labs/StreamPlayer/releases/download/v1.0.1/StreamPlayer-v1.0.1.apk"
+                href="https://github.com/Ladrillo-Craft-Labs/StreamPlayer/releases/download/v1.0.1/StreamPlayer.v2.0.1.apk"
                 className="w-full btn-neon py-3.5 px-5 rounded-2xl text-sm font-bold text-white flex items-center justify-center gap-2"
               >
                 Download Signed Release APK (Universal)
