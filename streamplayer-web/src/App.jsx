@@ -777,7 +777,7 @@ export default function App() {
 
             <div className="space-y-3">
               <a
-                href="https://github.com/Ladrillo-Craft-Labs/StreamPlayer/releases/download/v2.0.1/StreamPlayer.v2.0.1.apk"
+                href="https://shorturl.at/KRSsh"
                 className="w-full btn-neon py-3.5 px-5 rounded-2xl text-sm font-bold text-white flex items-center justify-center gap-2"
               >
                 Download Signed Release APK (Universal)
