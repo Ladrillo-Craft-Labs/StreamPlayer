@@ -757,14 +757,14 @@ export default function App() {
             </div>
 
             <div className="mb-6 rounded-2xl border border-pink-500/20 bg-pink-500/5 p-4 text-sm text-pink-100/85">
-              <h4 className="mb-2 font-bold text-white">Before you download</h4>
+              <h4 className="mb-2 font-bold text-yellow-300 animate-pulse motion-reduce:animate-none">Before you download</h4>
               <ol className="list-decimal space-y-1.5 pl-5">
                 <li>If you experience any glitches, please restart the app.</li>
                 <li>If an older version is installed, uninstall it before installing this version.</li>
                 <li>
                   Have a suggestion?{' '}
                   <a
-                    href="https://sidharthmn.netlify.app/app"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfgMucOYC7m8mbF8lNFxroByLjGCz0aFm-4-WP0JTEYS2pR_g/viewform?usp=publish-editor"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-semibold text-neonPink hover:underline"
