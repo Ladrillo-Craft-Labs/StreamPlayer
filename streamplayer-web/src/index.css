@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #080307;
+  color: #F9EFF5;
+  overflow-x: hidden;
+}
+
+.glass-nav {
+  background: rgba(14, 4, 11, 0.78);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255, 105, 180, 0.14);
+}
+
+.glass-card {
+  background: linear-gradient(145deg, rgba(26, 10, 21, 0.75) 0%, rgba(12, 4, 10, 0.88) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 105, 180, 0.15);
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(255, 20, 147, 0.45);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px -15px rgba(255, 20, 147, 0.25);
+}
+
+.pink-gradient-text {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFB5D5 48%, #FF1493 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-neon {
+  background: linear-gradient(135deg, #FF1493 0%, #D946EF 100%);
+  box-shadow: 0 8px 28px -6px rgba(255, 20, 147, 0.55);
+  transition: all 0.25s ease;
+}
+
+.btn-neon:hover {
+  box-shadow: 0 12px 36px -4px rgba(255, 20, 147, 0.8);
+  transform: translateY(-2px);
+}
+
+.btn-neon:active {
+  transform: translateY(0px);
+}
+
+.bg-grid {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 105, 180, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 105, 180, 0.04) 1px, transparent 1px);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080307;
+}
+::-webkit-scrollbar-thumb {
+  background: #2e1124;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF1493;
+}
