@@ -1,0 +1,11 @@
+@'
+[build]
+  base = "streamplayer-web"
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+'@ | Set-Content -Path "D:\SIDSOID\StreamPlayer Web\netlify.toml" -Encoding UTF8
