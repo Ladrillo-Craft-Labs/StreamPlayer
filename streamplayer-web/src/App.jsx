@@ -190,7 +190,7 @@ export default function App() {
             <div className="lg:col-span-7 text-center lg:text-left">
               <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-200 text-xs font-semibold tracking-wider uppercase mb-6">
                 <span className="w-2 h-2 rounded-full bg-neonPink animate-ping"></span>
-                <span>v1.0.1 Release &bull; Android 8.0+ &bull; Zero Ads</span>
+                <span>v1.0.1 PreRelease &bull; v2.0.1 Latest &bull; Android 8.0+ &bull; Zero Ads</span>
               </div>
 
               <p className="text-xs sm:text-sm font-bold tracking-[0.32em] text-neonPink uppercase mb-3">
@@ -566,7 +566,7 @@ export default function App() {
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.4" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                   </svg>
-                  <span>Get Release APK (v1.0.1)</span>
+                  <span>Get Release APK (v2.0.1)</span>
                 </button>
                 <a
                   href="#privacy"
@@ -777,7 +777,7 @@ export default function App() {
 
             <div className="space-y-3">
               <a
-                href="https://github.com/Ladrillo-Craft-Labs/StreamPlayer/releases/download/v1.0.1/StreamPlayer.v2.0.1.apk"
+                href="https://github.com/Ladrillo-Craft-Labs/StreamPlayer/releases/download/v2.0.1/StreamPlayer.v2.0.1.apk"
                 className="w-full btn-neon py-3.5 px-5 rounded-2xl text-sm font-bold text-white flex items-center justify-center gap-2"
               >
                 Download Signed Release APK (Universal)
